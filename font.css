@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Emoji;
+    src: local("Apple Color Emojiji"), local("Segoe UI Emoji"), local("Segoe UI Symbol"), local("Noto Color Emoji");
+    unicode-range: U+1F000-1F644, U+203C-3299;
+}
+
+.font-style, body {
+    font-family: system-ui, —apple-system, Segoe UI, Rototo, Emoji, Helvetica, Arial, sans-serif;
+}
+
+.font-serif {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.f-lh-nav {
+    line-height: 0;
+}
+
+.fw-Ultralight {
+    font-weight: 100;
+}
+
+.fw-Light {
+    font-weight: 300;
+}
+
+.fw-Regular {
+    font-weight: 400;
+}
+
+.fw-Semibold {
+    font-weight: 600;
+}
+
+.fw-Bold {
+    font-weight: 900;
+}
+
+:root {
+    --fw-Ultralight: 100;
+    --fw-Light: 300;
+    --fw-Regular: 400;
+    --fw-Semibold: 600;
+    --fw-Bold: 900;
+}
+
+.fs-w {
+    justify-self: flex-start;
+    color: var(--text-white);
+}
+
+.fs-otitle-l {
+    font-size: 56px;
+}
+
+.fs-otitle-m {
+    font-size: 48px;
+}
+
+.fs-otitle-s {
+    font-size: 36px;
+}
+
+.fs-title-l {
+    font-size: 24px;
+}
+
+.fs-title-m {
+    font-size: 20px;
+}
+
+.fs-title-s {
+    font-size: 16px;
+}
+
+.fs-text-l {
+    font-size: 14px;
+}
+
+.fs-text-l-s {
+    text-shadow: #00000073 0.2vw 0.2vw 0.5vw
+}
+
+.fs-text-s {
+    font-size: 13px;
+}
+
+.fs-text-s-s {
+    text-shadow: #00000048 0.15vw 0.15vw 0.4vw;
+}
+
+.fs-s {
+    font-size: 12px;
+}
+
+.fs-s-s {
+    text-shadow: #00000048 0.1vw 0.1vw 0.3vw;
+}
+
+.fc-75 {
+    color: var(--text-black-2);
+}
+
+.fc-75-w {
+    color: var(--text-white-2);
+}
+
+.fc-95-w {
+    color: var(--text-white);
+}
