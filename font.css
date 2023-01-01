@@ -46,6 +46,17 @@
     --fw-Regular: 400;
     --fw-Semibold: 600;
     --fw-Bold: 900;
+
+    --fs-bigtitle: 100px;
+    --fs-otitle-l: 56px;
+    --fs-otitle-m: 48px;
+    --fs-otitle-s: 36px;
+    --fs-title-l: 24px;
+    --fs-title-m: 20px;
+    --fs-title-s: 16px;
+    --fs-text-l: 14px;
+    --fs-text-s: 13px;
+    --fs-s: 12px;
 }
 
 .fs-w {
