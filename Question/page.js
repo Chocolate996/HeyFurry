@@ -20,19 +20,19 @@ var f = 0;
 function ok_1() {
   if (f == 0) {
     document.getElementsByClassName("img")[0].style.backgroundImage =
-      "url(/img/img2.jpg)";
+      "url(https://chocolate996.github.io/HeyFurry/Question/img/img2.jpg)";
   }
   if (f == 1) {
     document.getElementsByClassName("img")[0].style.backgroundImage =
-      "url(/img/img3.jpg)";
+      "url(https://chocolate996.github.io/HeyFurry/Question/img/img3.jpg)";
   }
   if (f == 2) {
     document.getElementsByClassName("img")[0].style.backgroundImage =
-      "url(/img/img4.jpg)";
+      "url(https://chocolate996.github.io/HeyFurry/Question/img/img4.jpg)";
   }
   if (f == 3) {
     document.getElementsByClassName("img")[0].style.backgroundImage =
-      "url(/img/img5.jpg)";
+      "url(https://chocolate996.github.io/HeyFurry/Question/img/img5.jpg)";
   }
   if (f == 4) {
     window.location.href = "go.html";
