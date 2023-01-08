@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HeyFurry - 群审核</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="font.css">
+</head>
+
+
+<body>
+    <div class="nav" id="nav">
+        <div class="nav-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
+                height="100%" viewBox="0 0 282 61">
+                <g style="mix-blend-mode:passthrough">
+                    <g style="mix-blend-mode:passthrough">
+                        <path
+                            d="M0,0L2,0L2,21L32,21L32,0L34,0L34,45L32,45L32,23L2,23L2,45L0,45L0,0ZM114,0L144,0L144,9L124,9L124,18L143,18L143,27L124,27L124,45L114,45L114,0ZM72.8564,38C69.9983,42.9504,64.7162,46,59,46C50.1634,46,43,38.8366,43,30C43,21.1634,50.1634,14,59,14C67.8366,14,75,21.1634,75,30C75,30.3336,74.9896,30.6671,74.9687,31L45.0352,31C45.5479,38.2653,51.6042,44,59,44C63.5807,44,67.8716,41.7591,70.4891,38L72.8564,38ZM45.0352,29C45.5479,21.7347,51.6042,16,59,16C66.3958,16,72.4521,21.7347,72.9648,29L45.0352,29ZM160,14L150,14L150,17.7913C150,29.4008,150,33.6012,151.635,36.8099C153.073,39.6323,155.368,41.927,158.19,43.3651C161.399,45,165.599,45,177.209,45L180,45L180,14L171,14L171,35L169.07,35C165.2,35,163.8,35,162.73,34.455C161.789,33.9757,161.024,33.2108,160.545,32.27C160,31.2004,160,29.8003,160,25.9304L160,14ZM252.331,44.47L239,14L249,14L256.998,32.282L264,14L274,14L256,61L246,61L252.331,44.47ZM187,38.5954L187,45L197,45L197,33.0696C197,29.1997,197,27.7996,197.545,26.73C198.024,25.7892,198.789,25.0243,199.73,24.545C200.8,24,202.2,24,206.07,24L209,24L209,14.001C201.826,14.0102,198.957,14.1009,196.624,14.9963C192.656,16.5198,189.52,19.6557,187.996,23.6245C187,26.2199,187,29.4799,187,38.5954ZM213,45L213,38.5954C213,29.4799,213,26.2199,213.996,23.6245C215.52,19.6557,218.656,16.5198,222.624,14.9963C224.957,14.1009,227.826,14.0102,235,14.001L235,24L232.07,24C228.2,24,226.8,24,225.73,24.545C224.789,25.0243,224.024,25.7892,223.545,26.73C223,27.7996,223,29.1997,223,33.0696L223,45L213,45ZM93,41.8333L103.5,15L106,15L88,61L85.5,61L91.782,44.946L80,15L82.5,15L93,41.6875L93,41.8333Z"
+                            fill-rule="evenodd" fill="#3D3D3D" fill-opacity="1" />
+                    </g>
+                    <g style="mix-blend-mode:passthrough">
+                        <ellipse cx="277" cy="40" rx="5" ry="5" fill="#D9843E" fill-opacity="1" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="r-18">
+            <span class="fs-title-m fw-Semibold">&nbsp;Tiny Question.</span>
+            <span class="fs-text-l">确保你已满 18 岁</span>
+            <div class="choose">
+                <a href="">
+                    <div class="url-box-transparent" onclick="question()">
+                        <span class="fs-s">我未满 18 岁</span>
+                    </div>
+                </a>
+                <a href="test.html">
+                    <div class="url-box">
+                        <sapn class="fs-s">我已满 18 岁</sapn>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <div class="url-box fs-text-s" onclick="r18()" id="nor18">开始审核</div>
+    </div>
+</body>
+
+<script type="text/javascript" src="javascript.js"></script>
+
+</html>

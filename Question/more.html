@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HeyFurry - 群审核</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="font.css">
+</head>
+
+
+<body>
+    <div class="screen">
+        <div class="img" style="background-image: url(/img/img8.jpg);"></div>
+        <div class="text-box">
+            <div class="text-text">
+                <div class="fs-title-s"><mark>你是否可以接受该图片？</mark></div>
+            </div>
+            <div class="choose-test">
+                <div class="margin">
+                    <a href="go.html">
+                        <div class="url-box-transparent">
+                            <span class="fs-text-s">不行了</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="url-box">
+                            <sapn class="fs-text-s" onclick="ok_1()">我可以</sapn>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="javascript.js"></script>
+<script type="text/javascript">
+    if (getCookie("r18q") == "no") {
+        window.location.href = "index.html";
+    } else {
+        console.log("r18_yes");
+    }
+
+    if (getCookie("r18can") == "no") {
+        window.location.href = "index.html";
+    } else {
+        console.log("r18can_yes");
+    }
+
+    function r18can() {
+        document.cookie = "r18can=no; expires=Thu, 18 Dec 2043 12:00:00 GMT";
+        window.location.href = "index.html";
+    }
+
+    var a = ["1111", "22222", "3333", "44444"];
+    var f = 0;
+    function ok_1() {
+        if (f == 0) {
+            document.getElementsByClassName("img")[0].style.backgroundImage =
+                "url(/img/img6.jpg)";
+        }
+        if (f == 1) {
+            document.getElementsByClassName("img")[0].style.backgroundImage =
+                "url(/img/img7.jpg)";
+        }
+        if (f == 2) {
+            document.cookie = "r18g=yes; expires=Thu, 18 Dec 2043 12:00:00 GMT";
+            window.location.href = "go.html";
+        }
+        f++;
+    }
+</script>
+
+</html>
