@@ -8,10 +8,9 @@
     <link rel="stylesheet" type="text/css" href="font.css">
 </head>
 
-
 <body>
     <div class="screen">
-        <div class="img" style="background-image: url(img/img8.jpg);"></div>
+        <div class="img" style="background-image: url(/img/img8.jpg);"></div>
         <div class="text-box">
             <div class="text-text">
                 <div class="fs-title-s"><mark>你是否可以接受该图片？</mark></div>
@@ -58,11 +57,11 @@
     function ok_1() {
         if (f == 0) {
             document.getElementsByClassName("img")[0].style.backgroundImage =
-                "url(img/img6.jpg)";
+                "url(/img/img6.jpg)";
         }
         if (f == 1) {
             document.getElementsByClassName("img")[0].style.backgroundImage =
-                "url(img/img7.jpg)";
+                "url(/img/img7.jpg)";
         }
         if (f == 2) {
             document.cookie = "r18g=yes; expires=Thu, 18 Dec 2043 12:00:00 GMT";

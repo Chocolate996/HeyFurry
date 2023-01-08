@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="font.css">
 </head>
 
-
 <body>
     <div class="nav" id="nav">
         <div class="nav-logo">
@@ -28,9 +27,9 @@
         </div>
     </div>
     <div class="screen">
-        <div class="fs-s ttc fw-Semibold">获得称号</div>
+        <div class="fs-s ttc fw-Semibold" id="pw">获得称号</div>
         <div class="fs-otitle-s fw-Bold"><mark id="bt">普通变态!</mark></div>
-        <a href="https://jq.qq.com/?_wv=1027&k=KjMWiCoP">
+        <a href="txt.html" id="then">
             <div class="url-box-transparent fs-text-s fw-Semibold" style="margin-top: 1rem;">前往二群</div>
         </a>
     </div>
@@ -44,9 +43,29 @@
 <script type="text/javascript">
     if (getCookie("r18g") == "yes") {
         document.getElementById("bt").innerText = "究极变态!";
+        document.getElementById("pw").innerText = "-1,2,17-";
     } else {
         console.log("r18g_no");
     }
+
+    if (getCookie("go1") == "ok") {
+        if (getCookie("go2") == "ok") {
+            if (getCookie("go3") == "ok") {
+                if (getCookie("gog") == "no") {
+                console.log("gun");
+                } else {
+                    document.getElementById("then").setAttribute("href", "https://jq.qq.com/?_wv=1027&k=KjMWiCoP");
+                }
+            } else {
+                console.log("gono");
+            }
+        } else {
+            console.log("gono");
+        }
+    } else {
+        console.log("gono");
+    }
+
 </script>
 
 </html>
