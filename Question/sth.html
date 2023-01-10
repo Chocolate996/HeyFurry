@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HeyFurry - 群主</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="font.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="img" style="background-color: rgb(241,241,241);">
+            <div class="header">
+                <sapn class="fs-text-l fw-Semibold">OwO</sapn>
+            </div>
+            <div class="body">
+                <div class="message">
+                    <div class="ico"></div>
+                    <div class="content">
+                        <div class="content-top">
+                            <div class="top">超级大总受</div>
+                            <div class="name">白霂owo</div>
+                        </div>
+                        <div class="text fw" ><p id="out_ms" class="max-w">我是受qwq</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="text-text">
+                <div class="fs-title-s"><mark>UP 文字编辑器</mark></div>
+            </div>
+            <div class="choose-test">
+                <div class="margin">
+                    <div class="up">
+                        <input class="fs-s up input" placeholder="输入文字" required="" type="text" id="start">
+                        <input class="fs-s up input-go fw-Bold" type="submit" value="GO" onclick="start()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="javascript.js"></script>
+<script type="text/javascript">
+    function start() {
+        var ms = document.getElementById('start').value;
+        console.log(ms);
+        document.getElementById("out_ms").innerText = ms;
+    }
+</script>
+
+
+</html>
