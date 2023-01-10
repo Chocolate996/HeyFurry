@@ -100,6 +100,7 @@ body {
 }
 
 .margin {
+    position: relative;
     width: 100%;
     display: flex;
     margin: 0 4rem;
@@ -227,6 +228,136 @@ mark.animate {
     justify-content: center;
     align-items: center;
     transition: all 0.5s var(--default-bezier-end);
+}
+
+.up {
+    width: 100%;
+}
+
+.form {
+    position: relative;
+}
+
+/* styling of Input */
+.input {
+    color: var(--text-black-in);
+    outline: none;
+    background-color: transparent;
+    height: 7rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    border: 1rem var(--default-color) solid;
+    transition: all 0.5s var(--default-bezier-start);
+}
+
+.input-go {
+    right: 0;
+    position: absolute;
+    color: var(--text-black-in);
+    outline: none;
+    height: 7rem;
+    width: 20%;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    background-color: var(--default-color);
+    transition: all 0.5s var(--default-bezier-start);
+    border: 1rem var(--text-black-in) solid;
+}
+
+.input::placeholder {
+    color: #000;
+    transition: all 0.5s var(--default-bezier-start);
+}
+
+.input:focus-visible {
+    border: 1rem var(--text-black-in) solid;
+    background-color: var(--default-color);
+}
+
+.input:focus-visible::placeholder {
+    color: var(--text-black-in);
+    font-weight: var(--fw-Bold);
+}
+
+.header {
+    width: 100%;
+    height: 12rem;
+    background-color: var(--default-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5rem;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+}
+
+.ico {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100px;
+    background-image: url(/img/up.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1.5rem;
+}
+
+.top {
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.7rem;
+    background-image: linear-gradient(45deg, rgb(253, 197, 60), rgb(250, 220, 46));
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-left: 0.5rem;
+}
+
+.content-top {
+    color: rgb(141, 141, 141);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: var(--fw-Semibold);
+}
+
+.name {
+    margin-left: 0.5rem;
+}
+
+.text {
+    min-height: 4rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+.max-w {
+    max-width: 30rem;
+    word-wrap: break-word;
+    line-height: 3.5rem;
 }
 
 :root {
