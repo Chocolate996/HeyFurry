@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HeyFurry - 群主</title>
+    <title>HeyFurry - 工具箱</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="font.css">
     <style>
@@ -12,7 +12,7 @@
         }
 
         :root {
-            --svg-color: #000000;
+            --svg-color: #3d3d3d;
         }
 
         .text-box {
@@ -25,7 +25,7 @@
     <div class="screen">
         <div class="img" style="background-color: rgb(241,241,241);">
             <div class="header">
-                <div class="header-after"></div>
+                <div class="header-after fs-text-s">OwO</div>
                 <div class="back">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%"
@@ -46,8 +46,22 @@
                         </g>
                     </svg>
                 </div>
-                <div>
-                    <span class="fs-text-l title">OwO</span>
+                <div class="header-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none"
+                        version="1.1" height="100%" viewBox="0 0 235 49">
+                        <g style="mix-blend-mode:passthrough">
+                            <g style="mix-blend-mode:passthrough">
+                                <path
+                                    d="M205,0L200,0L200,48L205,48L205,0ZM83,3L118,3L118,8L103,8L103,48L98,48L98,8L83,8L83,3ZM154,33C154,41.8366,146.8366,49,138,49C129.1634,49,122,41.8366,122,33C122,24.1634,129.1634,17,138,17C146.8366,17,154,24.1634,154,33ZM192,33C192,41.8366,184.837,49,176,49C167.1634,49,160,41.8366,160,33C160,24.1634,167.1634,17,176,17C184.837,17,192,24.1634,192,33ZM213,26.5C213,21.2533,217.253,17,222.5,17L231,17L231,22L222.5,22C220.015,22,218,24.0147,218,26.5C218,28.9853,220.015,31,222.5,31L226,31C227.85,31,229.57,31.5583,231,32.5155C233.412,34.1301,235,36.8796,235,40C235,44.9706,230.971,49,226,49L211,49L211,44L226,44C228.209,44,230,42.2091,230,40C230,37.7909,228.209,36,226,36L222.5,36C218.893,36,215.755,33.9897,214.147,31.0283C214.141,31.0189,214.136,31.0094,214.131,31C213.41,29.6606,213,28.1281,213,26.5ZM149,33C149,39.0751,144.0751,44,138,44C131.9249,44,127,39.0751,127,33C127,26.9249,131.9249,22,138,22C144.0751,22,149,26.9249,149,33ZM187,33C187,39.0751,182.07510000000002,44,176,44C169.92489999999998,44,165,39.0751,165,33C165,26.9249,169.92489999999998,22,176,22C182.07510000000002,22,187,26.9249,187,33Z"
+                                    fill-rule="evenodd" fill="#D9843E" fill-opacity="1" />
+                            </g>
+                            <g style="mix-blend-mode:passthrough">
+                                <path
+                                    d="M2,4L0,4L0,49L2,49L2,27L32,27L32,49L34,49L34,4L32,4L32,25L2,25L2,4ZM53,4L43,4L43,49L53,49L53,31L72,31L72,22L53,22L53,13L73,13L73,4L53,4Z"
+                                    fill-rule="evenodd" fill="#3D3D3D" fill-opacity="1" />
+                            </g>
+                        </g>
+                    </svg>
                 </div>
                 <div class="list">
                     <?xml version="1.0" encoding="UTF-8"?>
@@ -73,8 +87,8 @@
                     <div class="ico"></div>
                     <div class="content">
                         <div class="content-top">
-                            <div class="top">超级大总受</div>
-                            <div class="name">白霂owo</div>
+                            <div class="top"><span>超级大总受</span></div>
+                            <div class="name"><span>白霂owo</span></div>
                         </div>
                         <div class="text fw">
                             <p id="out_ms" class="max-w">awa</p>
@@ -105,8 +119,8 @@
         var ms = document.getElementById('start').value;
         document.getElementById("out_ms").innerText = ms;
         document.getElementsByClassName("header-after")[0].style.opacity = "1";
-        document.getElementsByClassName("title")[0].style.color = "#fff";
         document.getElementsByClassName("back")[0].style.opacity = "1";
+        document.getElementsByClassName("header-svg")[0].style.opacity = "0";
         document.documentElement.style.setProperty("--svg-color", "#ffffff");
     }
 </script>

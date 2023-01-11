@@ -59,8 +59,8 @@ body {
 }
 
 .nav-logo {
-    height: 5vh;
-    transform: translateY(2.5px);
+    height: 2.5vh;
+    transform: translateY(-0.25rem);
 }
 
 .screen {
@@ -287,7 +287,7 @@ mark.animate {
 .header {
     width: 100%;
     height: 12rem;
-    background-color: var(--default-color);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -295,6 +295,7 @@ mark.animate {
 }
 
 .header-after {
+    color: white;
     opacity: 0;
     position: absolute;
     content: "";
@@ -310,6 +311,10 @@ mark.animate {
 .header>div {
     z-index: 1;
     transition: all 0.5s var(--default-bezier-start);
+}
+
+.header-svg {
+    height: 4rem;
 }
 
 .title {
@@ -356,6 +361,10 @@ mark.animate {
     font-weight: var(--fw-Semibold);
 }
 
+.top>span {
+    transform: translateY(-0.04rem);
+}
+
 .content-top {
     color: rgb(141, 141, 141);
     height: 2rem;
@@ -365,7 +374,14 @@ mark.animate {
 }
 
 .name {
+    display: flex;
+    align-items: center;
+    height: 2rem;
     margin-left: 0.5rem;
+}
+
+.name>span {
+    transform: translateY(-0.04rem);
 }
 
 .text {
@@ -382,7 +398,7 @@ mark.animate {
 .max-w {
     max-width: 30rem;
     word-wrap: break-word;
-    line-height: 3.5rem;
+    line-height: 3rem;
 }
 
 .back {
