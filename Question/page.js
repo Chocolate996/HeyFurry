@@ -1,7 +1,6 @@
-if (getCookie("r18q") == "no") {
-  window.location.href = "index.html";
+if (getCookie("r18q") == "yes") {
 } else {
-  console.log("r18_yes");
+  window.location.href = "index.html";
 }
 
 if (getCookie("r18can") == "no") {

@@ -10,7 +10,8 @@
 
 <body>
     <div class="screen">
-        <div class="img" style="background-image: url(https://chocolate996.github.io/HeyFurry/Question/img/img8.jpg);"></div>
+        <div class="img" style="background-image: url(https://chocolate996.github.io/HeyFurry/Question/img/img8.jpg);">
+        </div>
         <div class="text-box">
             <div class="text-text">
                 <div class="fs-title-s"><mark>你是否可以接受该图片？</mark></div>
@@ -35,10 +36,9 @@
 
 <script type="text/javascript" src="javascript.js"></script>
 <script type="text/javascript">
-    if (getCookie("r18q") == "no") {
-        window.location.href = "index.html";
+    if (getCookie("r18q") == "yes") {
     } else {
-        console.log("r18_yes");
+        window.location.href = "index.html";
     }
 
     if (getCookie("r18can") == "no") {
