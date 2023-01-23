@@ -1,6 +1,10 @@
 function question() {
   document.cookie = "r18q=no; expires=Thu, 18 Dec 2043 12:00:00 GMT";
 }
+function questionok() {
+  document.cookie = "r18q=yes; expires=Thu, 18 Dec 2043 12:00:00 GMT";
+  window.location.href = "test.html";
+}
 
 function getCookie(name) {
   if (document.cookie.length > 0) {
@@ -13,6 +17,16 @@ function getCookie(name) {
     }
   }
   return "";
+}
+
+if (getCookie("delC") == "yes") {
+  document.getElementById("delC").style.opacity = "0";
+} else {
+  function delCookie() {
+    document.cookie = "delC=yes; expires=Thu, 18 Dec 2043 12:00:00 GMT";
+    document.cookie = "r18q=no; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    window.location.href = "index.html";
+  }
 }
 
 if (getCookie("r18q") == "no") {

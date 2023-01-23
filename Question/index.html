@@ -36,8 +36,8 @@
                         <span class="fs-s">我未满 18 岁</span>
                     </div>
                 </a>
-                <a href="test.html">
-                    <div class="url-box">
+                <a href="#">
+                    <div class="url-box" onclick="questionok()">
                         <sapn class="fs-s">我已满 18 岁</sapn>
                     </div>
                 </a>
@@ -45,7 +45,9 @@
         </div>
     </div>
     <div class="screen">
+        <div class="fs-title-s fw-Semibold" style="margin-bottom: 2rem;text-align: center;">图片加载速度会有亿点点慢<br>国内无法合法储存图片</div>
         <div class="url-box fs-text-s" onclick="r18()" id="nor18">开始审核</div>
+        <div class="url-box-transparent fs-text-s" onclick="delCookie()" id="delC" style="margin-top: 5rem;">清除非法 Cookie</div>
     </div>
 </body>
 

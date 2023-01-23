@@ -20,18 +20,22 @@ function ok_1() {
   if (f == 0) {
     document.getElementsByClassName("img")[0].style.backgroundImage =
       "url(https://chocolate996.github.io/HeyFurry/Question/img/img2.jpg)";
+    document.getElementsByClassName("ing")[0].style.width = "40%";
   }
   if (f == 1) {
     document.getElementsByClassName("img")[0].style.backgroundImage =
       "url(https://chocolate996.github.io/HeyFurry/Question/img/img3.jpg)";
+      document.getElementsByClassName("ing")[0].style.width = "60%";
   }
   if (f == 2) {
     document.getElementsByClassName("img")[0].style.backgroundImage =
       "url(https://chocolate996.github.io/HeyFurry/Question/img/img4.jpg)";
+      document.getElementsByClassName("ing")[0].style.width = "80%";
   }
   if (f == 3) {
     document.getElementsByClassName("img")[0].style.backgroundImage =
       "url(https://chocolate996.github.io/HeyFurry/Question/img/img5.jpg)";
+      document.getElementsByClassName("ing")[0].style.width = "100%";
   }
   if (f == 4) {
     window.location.href = "go.html";

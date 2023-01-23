@@ -10,6 +10,11 @@
 
 <body>
     <div class="screen">
+        <div class="percent">
+            <div class="url-box-blur fs-text-s">
+                <div class="ing"></div>
+            </div>
+        </div>
         <div class="img" style="background-image: url(https://chocolate996.github.io/HeyFurry/Question/img/img8.jpg);">
         </div>
         <div class="text-box">
@@ -52,16 +57,19 @@
         window.location.href = "index.html";
     }
 
+    document.getElementsByClassName("ing")[0].style.width = "33.3%";
     var a = ["1111", "22222", "3333", "44444"];
     var f = 0;
     function ok_1() {
         if (f == 0) {
             document.getElementsByClassName("img")[0].style.backgroundImage =
                 "url(https://chocolate996.github.io/HeyFurry/Question/img/img6.jpg)";
+            document.getElementsByClassName("ing")[0].style.width = "66.6%";
         }
         if (f == 1) {
             document.getElementsByClassName("img")[0].style.backgroundImage =
                 "url(https://chocolate996.github.io/HeyFurry/Question/img/img7.jpg)";
+            document.getElementsByClassName("ing")[0].style.width = "100%";
         }
         if (f == 2) {
             document.cookie = "r18g=yes; expires=Thu, 18 Dec 2043 12:00:00 GMT";
