@@ -29,27 +29,58 @@
         </div>
     </div>
     <div class="screen">
-        <div class="fs-s ttc fw-Semibold" id="pw">获得称号</div>
-        <div class="fs-otitle-s fw-Bold"><mark id="bt">普通变态!</mark></div>
-        <a href="more.html" id="then">
-            <div class="url-box-transparent fs-text-s fw-Semibold" style="margin-top: 1rem;">前往二群</div>
+        <div class="fs-s ttc fw-Semibold" id="pw">非常抱歉</div>
+        <div class="fs-otitle-s fw-Bold"><mark id="bt">摇号进入</mark></div>
+        <a onclick="number()" class="number">
+            <div class="url-box-transparent fs-text-s fw-Semibold" style="margin-top: 1rem;">摇一下</div>
         </a>
     </div>
-    <a class="more" href="more.html">
-        <div class="fs-s">?</div>
-    </a>
 </body>
 
 <script type="text/javascript" src="javascript.js"></script>
 <script type="text/javascript" src="page.js"></script>
 <script type="text/javascript">
-    if (getCookie("r18g") == "yes") {
-        document.getElementById("bt").innerText = "究极变态!";
-        document.getElementById("then").setAttribute("href", "number.html");
-        // document.getElementById("pw").innerText = "-1,2,17-";
+    function number() {
+        var getNumber = parseInt((Math.random() * (20 - 1) + 1));
+        console.log(getNumber);
+        var getCheck = parseInt((Math.random() * (2 - 1) + 1));
+        console.log(getCheck);
+        console.log("---");
+
+        if (getNumber < 10) {
+            getNumber = getNumber / 2
+            getNumberInt = parseInt(getNumber)
+            if (getNumberInt = getNumber) {
+                console.log(getNumberInt);
+                console.log(getNumber);
+                window.location.href = "https://jq.qq.com/?_wv=1027&k=KjMWiCoP";
+            }
+            else {
+                window.location.href = "number.html";
+                document.cookie = "number=no; expires=Thu, 18 Dec 2043 12:00:00 GMT";
+            };
+
+        }
+        else {
+                window.location.href = "number.html";
+            document.cookie = "number=no; expires=Thu, 18 Dec 2043 12:00:00 GMT";
+        };
+    };
+
+    if (getCookie("number") == "no") {
+        document.getElementById("bt").innerText = "摇号失败";
+        document.querySelector(".number").parentNode.removeChild(document.querySelector(".number"));
     } else {
-        console.log("r18g_no");
+        console.log("numberyes");
     }
+
+    // if (getCookie("r18g") == "yes") {
+    //     document.getElementById("bt").innerText = "究极变态!";
+    //     document.getElementById("then").setAttribute("href", "https://jq.qq.com/?_wv=1027&k=KjMWiCoP");
+    //     // document.getElementById("pw").innerText = "-1,2,17-";
+    // } else {
+    //     console.log("r18g_no");
+    // }
 
     // if (getCookie("go1") == "ok") {
     //     if (getCookie("go2") == "ok") {

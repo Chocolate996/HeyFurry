@@ -43,16 +43,3 @@ function ok_1() {
   }
   f++;
 }
-
-function goD() {
-  document.cookie = "go1=ok; expires=Thu, 18 Dec 2043 12:00:00 GMT";
-}
-function goO() {
-  document.cookie = "go2=ok; expires=Thu, 18 Dec 2043 12:00:00 GMT";
-}
-function goC() {
-  document.cookie = "go3=ok; expires=Thu, 18 Dec 2043 12:00:00 GMT";
-}
-function goG() {
-  document.cookie = "gog=no; expires=Thu, 18 Dec 2043 12:00:00 GMT";
-}
