@@ -34,7 +34,6 @@ if (getCookie("r18q") == "no") {
   document.getElementById("nor18").setAttribute("href", "#url");
   document.getElementById("nor18").innerText = "抱歉，你未满18岁";
 } else {
-  console.log("r18_yes");
   function r18() {
     document.getElementById("nav").className = "nav-screen";
     document.getElementsByClassName("nav-logo")[0].style.filter = "blur(10px)";
@@ -49,9 +48,9 @@ if (getCookie("r18can") == "no") {
   document.getElementById("nor18").setAttribute("href", "#url");
   document.getElementById("nor18").innerText = "抱歉，你不能接受";
 } else {
-  console.log("r18can_yes");
 }
 
+console.log=function(){}
 //mark样式
 let observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {

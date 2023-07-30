@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HeyFurry - 验证你的信息</title>
+</head>
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<style>
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        font-family: 'Inter', sans-serif;
+    }
+
+    @supports (font-variation-settings: normal) {
+        :root {
+            font-family: 'Inter var', sans-serif;
+        }
+    }
+
+    .font-style,
+    body {
+        font-family: 'Inter var', sans-serif;
+    }
+
+    .font-serif {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+
+    .font-mono {
+        font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box {
+        position: relative;
+        margin-bottom: 50px;
+        width: 600px;
+        height: 200px;
+        border-radius: 25px;
+        border: 1px rgb(224, 224, 224) solid;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.25), 0px 10px 20px -15px rgba(0, 0, 0, 0.25);
+    }
+
+
+    .title {
+        position: relative;
+        font-size: 64px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .TSVC {
+        color: crimson;
+    }
+
+    .num {
+        position: relative;
+        background-color: crimson;
+        color: white;
+        border-radius: 10px;
+        padding: 0 25px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        font-size: 32px;
+
+    }
+
+    input {
+        background-color: rgb(233, 233, 233);
+        border-radius: 10px;
+        width: 250px;
+        height: 50px;
+        margin: 0 5px;
+        border: none;
+        outline: none;
+        overflow: scroll;
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .outb {
+        display: flex;
+        justify-content: center;
+        margin: 25px auto;
+    }
+
+    .out {
+        position: relative;
+        background-color: crimson;
+        color: white;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* box-shadow: 0 0 0 2px hsl(0, 0%, 100%) inset, -0.25em -0.25em 0.25em hsla(0, 0%, 0%, 0.5) inset; */
+    }
+</style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="title">Your&nbsp;<div class="TSVC">TSVC</div>
+        </div>
+        <div class="num">
+            <div id="hours"></div>&nbsp;
+            <div id="minutes"></div>&nbsp;
+            <div id="seconds"></div>&nbsp;
+            <div id="random"></div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="title">Enter&nbsp;<div class="TSVC">TSVCG</div>
+        </div>
+        <div class="outb">
+            <input id="numCode" onkeydown="Enter()">
+            <div class="out" onclick="goo()">Go</div>
+        </div>
+    </div>
+    <pre class="text">找:(（QQ：2962131630）获取你的 TSVCG</pre>
+</body>
+
+<script type="text/javascript" src="javascript.js"></script>
+<script>
+    //GET TIME
+    var obj = new Date();
+    var hours = obj.getHours();
+    var minutes = obj.getMinutes();
+    var seconds = obj.getSeconds();
+    var randomF = parseInt((Math.random() * (100 - 1) + 1) - minutes * 2);
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+    document.getElementById("random").textContent = randomF;
+
+    //TIME CODE
+    var numA = String(hours + minutes).substring(0, 1);
+
+    var numB = String(hours + seconds).substring(String(hours + seconds).length - 1);
+
+    if (minutes > seconds) {
+        var numC = String(Math.abs(minutes - hours)).substring(0, 1);
+    } else {
+        var numC = String(Math.abs(minutes - seconds)).substring(String(Math.abs(minutes - seconds)).length - 1);
+    };
+
+    var numD = String(parseInt((hours + minutes) / 2 + seconds)).substring(0, 1);
+
+    if (hours >= 12) {
+        if (minutes > seconds) {
+            if (minutes >= 30) {
+                var numE = String(Math.abs(hours - minutes)).substring(0, 1);
+            }
+            else {
+                var numE = String(Math.abs(hours - seconds)).substring(String(Math.abs(hours - seconds)).length - 1)
+            };
+        }
+        else {
+            var numE = "0";
+        }
+    }
+    else {
+        var numE = "1"
+    };
+
+    var numF = String(randomF).substring(String(randomF).length - 1);
+
+    //OUT CODE
+    var numAll = parseInt(numA + numB + numC + numD + numE + numF);
+
+    //防君子，不防大佬
+    function Enter() {
+        if (event.keyCode == 13) {
+            //GET NUM
+            var numCode = parseInt(document.getElementById("numCode").value);
+            if (numAll == numCode) {
+                window.location.href = window.atob("YmxhbmsuaHRtbA==");
+
+            } else {
+                window.alert("Error code!");
+            }
+        }
+    }
+    function goo() {
+        //GET NUM
+        var numCode = parseInt(document.getElementById("numCode").value);
+        if (numAll == numCode) {
+            window.location.href = window.atob("YmxhbmsuaHRtbA==");
+        } else {
+            window.alert("Error code!");
+        }
+    }
+
+</script>
+
+</html>
